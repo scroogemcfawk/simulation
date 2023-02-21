@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.Group?>
+<VBox fx:id="root" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css" fx:controller="flight.SceneController">
+    <HBox fx:id="inputs" spacing="10">
+        <Label fx:id="LSpeed" text="Speed (m/s):"/>
+        <TextField fx:id="ISpeed" maxWidth="50">350</TextField>
+
+        <Label fx:id="LAngle" text="Angle (deg):"/>
+        <TextField fx:id="IAngle" maxWidth="50">0.0</TextField>
+
+        <Label fx:id="LSurface" text="Surface (m):"/>
+        <TextField fx:id="ISurface" maxWidth="50">0.00025</TextField>
+
+        <Label fx:id="LWeight" text="Weight (kg):"/>
+        <TextField fx:id="IWeight" maxWidth="50">0.012</TextField>
+
+        <Label fx:id="LHeight" text="Height (m):"/>
+        <TextField fx:id="IHeight" maxWidth="50">1.5</TextField>
+
+        <Label fx:id="LStep" text="Step (s):"/>
+        <TextField fx:id="IStep" maxWidth="50">0.01</TextField>
+
+        <Button text="Run" onMouseClicked="#run"/>
+    </HBox>
+    <LineChart fx:id="lc" title="Atmosphere Flight Pathway" VBox.vgrow="ALWAYS" createSymbols="false">
+        <xAxis>
+            <NumberAxis fx:id="xAxis" autoRanging="false" label="Distance">
+
+            </NumberAxis>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" autoRanging="false">
+
+            </NumberAxis>
+        </yAxis>
+    </LineChart>
+</VBox>
