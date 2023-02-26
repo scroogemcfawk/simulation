@@ -1,4 +1,4 @@
-module lab1 {
+module labs {
     requires javafx.controls;
     requires javafx.fxml;
     requires kotlin.stdlib;
@@ -6,4 +6,5 @@ module lab1 {
 
     opens flight to javafx.fxml;
     exports flight;
+    exports currency;
 }
