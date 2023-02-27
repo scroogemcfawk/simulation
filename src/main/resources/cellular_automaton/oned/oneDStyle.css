@@ -1,0 +1,46 @@
+#inputs {
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+/*Label {*/
+/*    -fx-padding: 10;*/
+/*}*/
+
+.rect {
+    -fx-min-width: 40;
+    -fx-max-width: 40;
+    -fx-min-height: 40;
+    -fx-max-height: 40;
+
+    -fx-border-width: 1;
+    -fx-border-color: black;
+}
+
+.interactive:hover {
+    -fx-background-color: rgba(255, 255, 0, 0.25);
+    -fx-cursor: hand;
+}
+
+.no-l-b {
+    -fx-border-width: 1 1 1 0;
+}
+
+.no-b-b {
+    -fx-border-width: 1 1 0 1;
+}
+
+.no-b-l-b {
+    -fx-border-width: 1 1 0 0;
+}
+
+.colored {
+    -fx-background-color: gold;
+}
+
+
+
+.iter {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}

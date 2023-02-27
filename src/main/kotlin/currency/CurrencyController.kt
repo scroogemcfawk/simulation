@@ -27,7 +27,6 @@ class CurrencyController {
     val lolS = XYChart.Series<Int, Double>()
 
     var init = false
-    var go = false
     var day = 1
 
     val r = Random()

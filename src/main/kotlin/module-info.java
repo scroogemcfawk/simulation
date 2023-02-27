@@ -7,4 +7,5 @@ module labs {
     opens flight to javafx.fxml;
     exports flight;
     exports currency;
+    exports cellular_automaton.oned;
 }
