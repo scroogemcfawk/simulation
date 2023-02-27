@@ -1,0 +1,22 @@
+#inputs {
+    -fx-padding: 10;
+    -fx-alignment: center;
+}
+
+.rect {
+    -fx-min-width: 50;
+    /*-fx-max-width: 10;*/
+    -fx-min-height: 50;
+    /*-fx-max-height: 10;*/
+    -fx-border-width: 0.2;
+    -fx-border-color: rgba(0,0,0,0.4);
+}
+
+.interactive:hover {
+    -fx-background-color: rgba(255, 255, 0, 0.25);
+    -fx-cursor: hand;
+}
+
+.colored {
+    -fx-background-color: gold;
+}

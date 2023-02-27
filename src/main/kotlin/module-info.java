@@ -8,4 +8,5 @@ module labs {
     exports flight;
     exports currency;
     exports cellular_automaton.oned;
+    exports cellular_automaton.twod;
 }

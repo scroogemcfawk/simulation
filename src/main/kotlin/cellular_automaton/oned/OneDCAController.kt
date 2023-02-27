@@ -164,6 +164,7 @@ class OneDCAController {
         iteration = 1
         for (i in 1..16) {
             gp.children[i].styleClass.remove("interactive")
+            gp.children[i].onMouseClicked = EventHandler {  }
         }
         println("111 110 101 100 011 010 001 000")
         println(" " + ruleTable.map { if (it) 1 else 0 }.joinToString("   "))
